@@ -1,0 +1,166 @@
+/* Site nav */
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+.menu-wrapper {
+  // display: none;
+}
+
+.menu-btn {
+  // position: relative;
+  z-index: 100;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  &.is-open {
+    .icon-close {
+      display: block;
+    }
+
+    .icon-burger {
+      display: none;
+    }
+  }
+}
+
+.icon-close {
+  display: none;
+}
+
+// .header .container {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .nav-header {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .nav-logo {
+//   margin-right: 85px;
+// }
+
+// .site-nav {
+//   display: flex;
+//   .site-link {
+//     display: block;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+//     color: $title-text-color;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     text-decoration: none;
+//     @extend %transition;
+//   }
+// }
+
+// .site-nav-item:not(:last-child) {
+//   margin-right: 50px;
+// }
+
+// .nav-contacts-item {
+//   @extend %transition;
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+//   &:hover .header-icon-phone-svg,
+//   &:focus .header-icon-phone-svg,
+//   &:hover .header-icon-mail-svg,
+//   &:focus .header-icon-mail-svg {
+//     fill: $accent-color;
+//   }
+// }
+// .social-contacts-link {
+//   @extend %transition;
+//   &:hover .header-icon-phone-svg,
+//   &:focus .header-icon-phone-svg,
+//   &:hover .header-icon-mail-svg,
+//   &:focus .header-icon-mail-svg,
+//   &:hover,
+//   &:focus {
+//     fill: $accent-color;
+//     color: $accent-color;
+//   }
+// }
+
+// .header-icon-mail-svg {
+//   fill: $primary-text-color;
+//   @extend %transition;
+//   background-size: contain;
+//   width: 16px;
+//   height: 11px;
+//   margin-right: 10px;
+// }
+
+// .header-icon-phone-svg {
+//   fill: $primary-text-color;
+//   @extend %transition;
+//   background-size: contain;
+//   width: 10px;
+//   height: 16px;
+//   margin-right: 10px;
+// }
+
+// .main-page::after {
+//   display: block;
+//   content: "";
+//   height: 4px;
+//   border-radius: 2px;
+//   background: $accent-color;
+// }
+
+// .site-link:hover,
+// .site-link:focus,
+// .nav-contacts-link:hover,
+// .nav-contacts-link:focus,
+// .site-nav .current-site {
+//   color: $accent-color;
+// }
+
+// .button-item:hover,
+// .button-item:focus,
+// .portfolio-list-description:hover {
+//   color: $primary-white-color;
+//   background-color: $accent-color;
+// }
+
+// .team {
+//   .nav-contacts-link:hover,
+//   .nav-contacts-link:focus {
+//     background-color: $accent-color;
+//     fill: $sprite-color;
+//   }
+// }
+
+// .nav-contacts,
+// .social-contacts {
+//   display: flex;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.4;
+//   letter-spacing: 0.02em;
+//   &-link {
+//     color: $primary-text-color;
+//     text-decoration: none;
+//     font-style: normal;
+//   }
+// }
+
+// .nav-adress {
+//   margin-left: auto;
+// }

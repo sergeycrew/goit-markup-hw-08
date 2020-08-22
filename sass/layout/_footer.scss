@@ -1,0 +1,121 @@
+/* footer*/
+
+.footer {
+  color: $primary-white-color;
+  background-color: $background-footer;
+  font-size: 14px;
+  line-height: 1.14;
+  .nav-contacts-link {
+    background-color: $background-footer-social;
+    display: block;
+    padding: 12px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    left: 247px;
+    top: 2139px;
+  }
+  .nav-contacts-link:focus,
+  .nav-contacts-link:hover {
+    background-color: $accent-color;
+    fill: $sprite-color;
+  }
+}
+
+.footer-container {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-adress {
+  margin-right: 69px;
+  &-container {
+    width: 231px;
+    height: 81px;
+  }
+  &-list {
+    line-height: 1.71;
+    font-style: normal;
+  }
+  &-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.adress-item {
+  color: $primary-white-color;
+}
+.contact-item {
+  color: $footer-white;
+}
+
+.footer-social-container {
+  margin-top: 12px;
+  margin-right: 94px;
+  width: 206px;
+  height: 80px;
+}
+
+.footer-description {
+  display: block;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-form {
+  margin-top: 12px;
+  width: 570px;
+  height: 86px;
+}
+
+.email-form {
+  display: flex;
+  align-items: center;
+}
+
+.user-email-input {
+  width: 358px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 16px;
+  background-color: transparent;
+  border: 1px solid $primary-text-color;
+  border-radius: 4px;
+  color: $footer-white;
+  outline: none;
+  border: 1px solid $border-footer-form;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.footer-form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  border-style: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: $accent-color;
+}
+
+.icon-send-svg {
+  fill: $primary-white-color;
+  margin-left: 10px;
+}

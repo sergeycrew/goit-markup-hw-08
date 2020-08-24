@@ -1,9 +1,8 @@
 /* Hero */
 .hero {
-  max-width: 480px;
+  width: 480px;
+
   height: 400px;
-  margin-left: auto;
-  margin-right: auto;
   background-image: linear-gradient($backgroung-hero, $backgroung-hero),
     url("../../images/mobile/hero/hero-img.jpg");
   background-repeat: no-repeat;
@@ -15,10 +14,11 @@
   padding-left: 60px;
   &-container {
     width: 360px;
-    margin: auto;
+    margin: 0 auto;
   }
   &-title {
     font-weight: 900;
+
     font-size: 26px;
     line-height: 1.62;
     text-align: center;
@@ -31,6 +31,7 @@
 .button-hero {
   @extend %margin-center;
   margin-top: 30px;
+
   height: 50px;
   font-weight: bold;
   font-size: 16px;

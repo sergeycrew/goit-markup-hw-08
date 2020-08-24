@@ -7,6 +7,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -414,7 +418,7 @@ template {
   align-items: center;
 }
 
-.modal-form-btn, .principles-img {
+.modal-form-btn, .button-hero, .principles-img {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -435,22 +439,14 @@ template {
 
 .title {
   margin: 0px;
-  color: #212121;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
 }
 
 .button {
   background-color: #2196f3;
   color: #ffffff;
-  border: none;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.875;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
+  border: none;
   border-radius: 4px;
 }
 
@@ -697,6 +693,10 @@ template {
 }
 
 /* Site nav */
+.header {
+  position: relative;
+}
+
 .header::after {
   display: block;
   content: "";
@@ -734,9 +734,20 @@ template {
 .menu-wrapper {
   display: none;
   position: absolute;
+  top: -78px;
+  left: 0px;
+  transform: translate(0px, 160px);
+  transition: margin-right 2s ease-in-out;
   height: 393px;
+  width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.menu-wrapper.is-open {
+  display: block;
 }
 
 .menu-btn {
@@ -825,6 +836,7 @@ template {
 
 .hero-container {
   width: 360px;
+  margin: auto;
 }
 
 .hero-title {
@@ -835,6 +847,26 @@ template {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.button-hero {
+  margin-top: 30px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+}
+
+.button-herohover, .button-herofocus {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /* principles */

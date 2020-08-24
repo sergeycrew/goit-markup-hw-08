@@ -1,5 +1,6 @@
 /* Site nav */
 .header {
+  position: relative;
   &::after {
     display: block;
     content: "";
@@ -35,9 +36,20 @@
 .menu-wrapper {
   display: none;
   position: absolute;
+  top: -78px;
+  left: 0px;
+  transform: translate(0px, 160px);
+  transition: margin-right 2s ease-in-out;
   height: 393px;
+  width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
+  background: $primary-white-color;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+  &.is-open {
+    display: block;
+  }
 }
 
 .menu-btn {

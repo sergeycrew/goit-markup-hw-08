@@ -698,7 +698,7 @@ template {
   left: -400px;
   transform: translate(400px, 0px);
   height: 393px;
-  width: 480px;
+  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
   background: #ffffff;
@@ -852,6 +852,7 @@ template {
   padding-right: 60px;
   padding-bottom: 118px;
   padding-left: 60px;
+  margin: 0 auto;
 }
 
 .hero-container {
@@ -890,39 +891,39 @@ template {
 }
 
 /* principles */
+.principles {
+  width: 480px;
+  margin: 0 auto;
+}
+
 .principles-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  width: 480px;
 }
 
 .principles-list {
-  display: flex;
-}
-
-.principles-item:not(:last-child) {
-  margin-right: 30px;
+  width: 450px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .principles-img {
-  margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 100px;
-  padding-right: 100px;
-  width: 270px;
+  width: 450px;
   height: 120px;
   border-radius: 4px;
   background-color: #f5f4fa;
+  padding-left: 190px;
+  padding-right: 190px;
+  margin-bottom: 30px;
 }
 
 .principles-title {
   margin-top: 0px;
   margin-bottom: 10px;
-  color: #212121;
   font-weight: bold;
-  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  color: #212121;
+  text-align: center;
 }
 
 .principles-description {
@@ -930,6 +931,10 @@ template {
   margin-bottom: 0px;
   font-size: 14px;
   line-height: 1.6;
+}
+
+.principles-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 /* services */

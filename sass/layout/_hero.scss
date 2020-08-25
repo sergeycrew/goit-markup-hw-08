@@ -1,7 +1,6 @@
 /* Hero */
 .hero {
   width: 480px;
-
   height: 400px;
   background-image: linear-gradient($backgroung-hero, $backgroung-hero),
     url("../../images/mobile/hero/hero-img.jpg");
@@ -12,6 +11,7 @@
   padding-right: 60px;
   padding-bottom: 118px;
   padding-left: 60px;
+  margin: 0 auto;
   &-container {
     width: 360px;
     margin: 0 auto;

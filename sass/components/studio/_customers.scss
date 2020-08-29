@@ -1,0 +1,75 @@
+/* Our customers */
+
+.section__customers {
+  min-width: 480px;
+
+  text-align: center;
+}
+
+.customers__container {
+  @extend %container;
+  display: block;
+}
+
+.customers__title {
+  margin-bottom: 30px;
+
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+.customers__logo {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: -15px;
+}
+
+.customers__item {
+  // width: 210px;
+  margin: 15px;
+  flex-basis: calc((100% - 2 * 30px) / 2);
+  height: auto;
+
+  @media screen and (min-width: 768px) {
+    // width: 226px;
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    // width: 170px;
+    flex-basis: calc((100% - 12 * 15px) / 6);
+  }
+}
+
+.customers__link--icon {
+  width: 50px;
+  height: 50px;
+  fill: currentColor;
+
+  &-background {
+    @include colorTextDecor($socialsColor);
+    @include centeredFlex();
+    // width: 210px;
+    height: 90px;
+    border-radius: 4px;
+
+    border: 1px solid $socialsColor;
+
+    transition: color $duration $timingFunction,
+      border-color $duration $timingFunction;
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+      border-color: $accentColor;
+    }
+  }
+}

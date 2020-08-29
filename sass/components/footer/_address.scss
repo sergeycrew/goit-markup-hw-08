@@ -1,0 +1,44 @@
+.page-footer__address {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+  }
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+
+  color: $tertiaryTextColor;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+
+  &__text {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.page-footer-contacts {
+  @include colorTextDecor(rgba(255, 255, 255, 0.6));
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 9px;
+    }
+  }
+}

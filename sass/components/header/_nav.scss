@@ -1,0 +1,76 @@
+/* Navigation */
+
+.page-header__nav {
+  color: $primaryTextColor;
+
+  font-weight: 500;
+
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-size: 18px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    @include centeredFlex();
+  }
+}
+
+.site-nav {
+  @extend %list;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.site-nav__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
+}
+
+.site-nav__item:last-child {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 44px;
+  }
+}
+
+.site-nav__link {
+  @include colorTextDecor($primaryTextColor);
+  display: inline-block;
+  transition: $duration $timingFunction;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+
+  &--current {
+    position: relative;
+    color: $accentColor;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $accentColor;
+    }
+  }
+}

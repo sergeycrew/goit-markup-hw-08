@@ -1,0 +1,74 @@
+.appeal__form {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    align-self: flex-end;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    align-self: baseline;
+  }
+}
+
+.appeal__container {
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.appeal__email {
+  margin: 0;
+
+  width: 450px;
+  height: 50px;
+
+  padding: 18px 12px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: transparent;
+
+  color: $tertiaryTextColor;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.page-footer__button {
+  @extend %button;
+  display: inline-flex;
+  justify-content: flex-start;
+
+  padding: 10px 29px;
+
+  &--icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    /* align-self: flex-end; */
+    align-self: center;
+    fill: currentColor;
+  }
+}

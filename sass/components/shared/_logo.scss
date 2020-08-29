@@ -1,0 +1,61 @@
+.page-header__logo {
+  @include colorTextDecor($logoColor);
+  display: inline-block;
+
+  color: $logoColor;
+
+  font-family: $logoFont;
+  font-style: normal;
+  font-weight: bold;
+
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 81px;
+    font-size: 24px;
+    line-height: 1.16;
+    display: inline-flex;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.page-header__logo--space {
+  @media screen and (min-width: 768px) {
+    margin-right: 7px;
+  }
+}
+
+.page-logo {
+  color: $primaryTextColor;
+
+  &--reverse {
+    color: $tertiaryTextColor;
+  }
+}
+
+.page-footer__logo {
+  @include colorTextDecor($logoColor);
+
+  display: block;
+  color: $logoColor;
+  font-family: $logoFont;
+  font-style: normal;
+  font-weight: bold;
+
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.16;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 1.18;
+    text-align: left;
+  }
+}

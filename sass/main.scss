@@ -1,19 +1,28 @@
-@import "./utils/variables";
-@import "./base/base";
-@import "./base/container";
-@import "./base/normalize";
-@import "./utils/placeholders";
-@import "./utils/mixin";
-@import "./components/components";
-@import "./components/logo";
-@import "./components/modal-window";
-@import "./components/_mobile-menu";
-@import "./layout/header";
-@import "./layout/hero";
-@import "./layout/principles";
-@import "./layout/services";
-@import "./layout/team";
-@import "./layout/clients";
-@import "./layout/footer";
-@import "./layout/portfolio-buttons";
-@import "./layout/portfolio-container";
+@import './base/normalize';
+@import './base/fonts';
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './utils/visually-hidden';
+@import './utils/breakpoints';
+
+@import './components/shared/common';
+@import './components/shared/logo';
+@import './components/shared/appeal';
+
+@import './components/header/page-header';
+@import './components/header/nav';
+@import './components/header/contacts';
+
+@import './components/studio/hero';
+@import './components/studio/features';
+@import './components/studio/occupation';
+@import './components/studio/team';
+@import './components/studio/customers';
+
+@import './components/footer/page-footer';
+@import './components/footer/address';
+@import './components/footer/form';
+@import './components/footer/socials';
+
+@import './components/modal';

@@ -1,20 +1,17 @@
-$primary-font-family: "roboto", sans-serif;
-$secondary-font-family: "raleway", sans-serif;
-$primary-text-color: #757575;
-$title-text-color: #212121;
-$accent-color: #2196f3;
-$logo-color: #000000;
-$primary-white-color: #ffffff;
-$footer-white: rgba(255, 255, 255, 0.6);
-$border-footer-form: rgba(255, 255, 255, 0.3);
-$backgroung-second: #afb1b8;
-$background-footer: #2f303a;
-$background-footer-social: rgba(255, 255, 255, 0.1);
-$background-button: #f5f4fa;
-$background-portfolio-item: #eeeeee;
-$background-services: rgba(47, 48, 58, 0.8);
-$backgroung-hero: rgba(47, 48, 58, 0.8);
-$background-overlay: rgba(33, 150, 243, 0.9);
-$sprite-color: #afb1b8;
-$mobile-header-line: #ececec;
-$background-button-hover: #188ce8;
+$logoColor: #2196f3;
+$titleTextColor: #ffffff;
+$accentColor: #2196f3;
+$socialsColor: #afb1b8;
+
+$primaryTextColor: #212121;
+$secondaryTextColor: #757575;
+$tertiaryTextColor: #ffffff;
+
+$primaryBgColor: #ffffff;
+$secondaryBgColor: #f5f4fa;
+$tertiaryBgColor: #2f303a;
+
+$timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
+$duration: 250ms;
+
+$width-occupation: 60px;

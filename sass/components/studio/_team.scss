@@ -1,6 +1,34 @@
 /* Our team */
+@media screen and (min-width: 480px) {
+  .section__team {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section__team {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__team {
+    width: 1600px;
+    margin: 0 auto;
+  }
+}
+
 .section__team {
-  min-width: 480px;
+  // @media screen and (min-width: 480px) {
+  //   width: 480px;
+  // }
+  // @media screen and (min-width: 768px) {
+  //   width: 768px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   width: 1200px;
+  // }
+  // min-width: 480px;
 
   background-color: $secondaryBgColor;
   text-align: center;
@@ -67,7 +95,7 @@
 
 .card__content {
   background-color: $primaryBgColor;
-  height: 100%;
+  // height: 100%;
   overflow: hidden;
 
   padding-top: 30px;

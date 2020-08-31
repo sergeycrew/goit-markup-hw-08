@@ -298,8 +298,7 @@ summary {
 }
 
 .page-header__container, .project__container, .page-footer__container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 60px;
@@ -995,12 +994,14 @@ img {
 @media screen and (max-width: 767px) {
   .page-footer {
     min-width: 480px;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .page-footer {
     min-width: 768px;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1015,7 +1016,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .page-footer {
-    min-width: 1200px;
+    width: 1600px;
+    margin: 0 auto;
   }
 }
 

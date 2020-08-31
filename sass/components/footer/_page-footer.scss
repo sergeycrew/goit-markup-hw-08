@@ -5,14 +5,16 @@
 
   @media screen and (max-width: 767px) {
     min-width: 480px;
+    margin: 0 auto;
   }
   @media screen and (min-width: 768px) {
     min-width: 768px;
-
+    margin: 0 auto;
     @include centeredFlex();
   }
   @media screen and (min-width: 1200px) {
-    min-width: 1200px;
+    width: 1600px;
+    margin: 0 auto;
   }
 
   &__container {

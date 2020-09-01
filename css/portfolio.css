@@ -466,6 +466,13 @@ img {
   background-color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .page-header {
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+
 .page-header--border {
   width: 100%;
   border-bottom: 1px solid #ececec;
@@ -586,7 +593,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .page-header__menu {
-    width: 1200px;
+    width: 1170px;
   }
 }
 
@@ -1014,13 +1021,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .page-footer {
-    width: 1600px;
-    margin: 0 auto;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .page-footer__container {
     width: 480px;
@@ -1061,6 +1061,7 @@ img {
     width: 1200px;
     height: 252px;
     padding: 60px 15px;
+    margin: 0 auto;
   }
 }
 

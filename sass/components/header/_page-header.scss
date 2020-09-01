@@ -1,6 +1,10 @@
 /* Header */
 .page-header {
   background-color: $primaryBgColor;
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+    margin: 0 auto;
+  }
 }
 
 .page-header--border {
@@ -105,6 +109,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: 1170px;
   }
 }

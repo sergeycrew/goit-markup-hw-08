@@ -12,10 +12,10 @@
     margin: 0 auto;
     @include centeredFlex();
   }
-  @media screen and (min-width: 1200px) {
-    width: 1600px;
-    margin: 0 auto;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   width: 1200px;
+  //   // margin: 0 auto;
+  // }
 
   &__container {
     @extend %container;
@@ -45,6 +45,7 @@
       width: 1200px;
       height: 252px;
       padding: 60px 15px;
+      margin: 0 auto;
     }
   }
 }

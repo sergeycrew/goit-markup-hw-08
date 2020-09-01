@@ -336,57 +336,6 @@ summary {
   overflow: hidden;
 }
 
-@media screen and (min-width: 480px) {
-  .hero,
-  .page-header {
-    width: 480px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero,
-  .page-header {
-    width: 768px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero,
-  .page-header {
-    width: 1600px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .section__features,
-  .occupation__container,
-  .section__customers {
-    width: 480px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .section__features,
-  .occupation__container,
-  .section__customers {
-    width: 768px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section__features,
-  .occupation__container,
-  .section__customers {
-    width: 1170px;
-    margin: 0 auto;
-  }
-}
-
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -517,6 +466,13 @@ img {
   background-color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .page-header {
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+
 .page-header--border {
   width: 100%;
   border-bottom: 1px solid #ececec;
@@ -637,7 +593,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .page-header__menu {
-    width: 1200px;
+    width: 1170px;
   }
 }
 
@@ -1104,20 +1060,20 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .section__team {
-    width: 1600px;
-    margin: 0 auto;
-  }
-}
-
 .section__team {
   background-color: #f5f4fa;
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .section__team {
+    width: 100%;
+  }
+}
+
 .team__container {
   display: block;
+  margin: 0 auto;
 }
 
 .team__title {
@@ -1371,13 +1327,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .page-footer {
-    width: 1600px;
-    margin: 0 auto;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .page-footer__container {
     width: 480px;
@@ -1418,6 +1367,7 @@ img {
     width: 1200px;
     height: 252px;
     padding: 60px 15px;
+    margin: 0 auto;
   }
 }
 

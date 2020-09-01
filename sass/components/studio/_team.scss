@@ -11,12 +11,12 @@
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 1200px) {
-  .section__team {
-    width: 1600px;
-    margin: 0 auto;
-  }
-}
+// @media screen and (min-width: 1200px) {
+//   .section__team {
+//     width: 1600px;
+//     margin: 0 auto;
+//   }
+// }
 
 .section__team {
   // @media screen and (min-width: 480px) {
@@ -25,9 +25,9 @@
   // @media screen and (min-width: 768px) {
   //   width: 768px;
   // }
-  // @media screen and (min-width: 1200px) {
-  //   width: 1200px;
-  // }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
   // min-width: 480px;
 
   background-color: $secondaryBgColor;
@@ -37,6 +37,13 @@
 .team__container {
   @extend %container;
   display: block;
+  margin: 0 auto;
+  // margin: 0px;
+
+  // @media screen and (min-width: 1200px) {
+  //   width: 1210px;
+  //   margin: 0 auto;
+  // }
 }
 
 .team__title {
@@ -87,12 +94,21 @@
   }
 
   @media screen and (min-width: 1200px) {
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
+
     // width: 270px;
     flex-basis: calc((100% - 4 * 30px) / 4);
     margin: 15px;
   }
 }
 
+// @media screen and (min-width: 1200px) {
+//   .card-set__item:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
 .card__content {
   background-color: $primaryBgColor;
   // height: 100%;
